@@ -6,9 +6,9 @@ class AuthUserController {
     async handle(req:Request, res:Response) {
         const {email, password} = req.body;
 
-        const user = AuthUserService.execute({email, password});
+        const auth = await AuthUserService.execute({email, password});
 
-        return user;
+        return res.json(auth);
     }
 }
 

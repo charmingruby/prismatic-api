@@ -1,10 +1,10 @@
 import { Request,Response } from 'express';
 
-import GetAllUsersService from '../../services/user/GetAllUsersService';
+import ListUsersService from '../../services/user/ListUsersService';
 
-class GetAllUsersController {
+class ListUsersController {
     async handle(req:Request, res:Response) {
-        const users = await GetAllUsersService.execute();
+        const users = await ListUsersService.execute();
 
         if(users.length === 0) {
             return res.json({advice: 'There\'s no users registered'});
@@ -14,4 +14,4 @@ class GetAllUsersController {
     }
 }
 
-export default new GetAllUsersController();
+export default new ListUsersController();
