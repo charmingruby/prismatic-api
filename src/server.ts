@@ -16,6 +16,7 @@ app.use(
 app.use(router.userRouter);
 app.use(router.categoryRouter);
 app.use(router.productRouter);
+app.use(router.orderRouter);
 
 app.use((err:Error, req:Request, res:Response, next:NextFunction) => {
     if(err instanceof Error) {
