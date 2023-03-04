@@ -2,7 +2,7 @@
   Prismatic API
 </h2>
 
-<p align="center">A Sales Store API, made using Node, Express, Prisma, Postgre and Docker.</p>
+<p align="center">A Sales Store API, made using Node, Express, TypeScript, JWT, Prisma, Postgre and Docker.</p>
 
 ## :gear: Installation
 
