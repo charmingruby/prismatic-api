@@ -14,7 +14,7 @@ $ cd prismatic-api
 $ yarn install
 ```
 
-It's need to run a Postgre Container on Docker to connect to the database and create a secret key for JWT, everything on a .env file. 
+It's needed to run a Postgre Container on Docker to connect to the database and create a secret key for JWT, everything on a .env file. 
 
 ## :arrow_forward: Usage
 
